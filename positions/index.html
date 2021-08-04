@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        /* color: #333333; */
+        /* background-color: #fff; */
+        min-height: 100vh;
+        min-width: 100vw;
+        background: repeating-linear-gradient(
+          45deg,
+          #606dbc,
+          #606dbc 10px,
+          #465298 10px,
+          #465298 20px
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      main > .header {
+        margin: 20px;
+      }
+      main > .header > h1 {
+        font-size: 3em;
+        text-shadow: 0 0 2px #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      main > .header > p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        max-width: 840px;
+      }
+      .container {
+        width: fit-content;
+
+        max-width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* margin: 0 auto; */
+        /* max-width: 700px; */
+        /* padding: 0 20px; */
+        border: #465298 1px solid;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #465298;
+        background: #fff;
+        /* width: 100%; */
+        /* max-width: 1000px; */
+        /* padding: 0 20px; */
+        /* border: #465298 1px solid; */
+        /* border-radius: 5px; */
+        /* box-shadow: 0px 0px 10px #465298; */
+        /* background: #fff; */
+      }
+      .container > * {
+        border: #666 1px solid;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #666;
+        margin: 9px;
+        padding: 10px;
+        display: inline-block;
+        width: calc(50% - 20px);
+      }
+      .demo {
+        /* display: block; */
+        /* display: inline-block; */
+        /* width: 45%; */
+        /* max-height: 40vh; */
+        height: 300px;
+        overflow-x: scroll;
+      }
+
+      .control-panel {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        
+        /* display: block; */
+        /* display: inline-block; */
+        /* width: 45%; */
+      }
+      .control-panel > div {
+        border: 1px solid #666;
+        margin: 5px;
+        padding: 5px;
+        cursor: pointer;
+      }
+      .position-demo-box {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #333;
+        margin: 10px;
+        display: inline-block;
+      }
+      .position-demo-box:hover {
+        border: 1px solid #666;
+      }
+      #position-demo-box-2 {
+          background: #fbff00;
+      }
+      .position.active {
+        border: 1px solid #fbff00;
+      }
+      .container > .demo > p{
+          
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1>position</h1>
+        <p>
+          The position CSS property sets how an element is positioned in a
+          document. The top, right, bottom, and left properties determine the
+          final location of positioned elements.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="control-panel">
+          <h2>control panel</h2>
+          <div class="position" id="position-static">
+            <code> position: static; </code>
+          </div>
+          <div class="position" id="position-relative">
+            <code> position: relative; top: 40px; left: 40px; </code>
+          </div>
+          <div class="position" id="position-absolute">
+            <code> position: absolute; top: 40px; left: 40px; </code>
+          </div>
+          <div class="position" id="position-sticky">
+            <code> position: sticky; top: 20px; </code>
+          </div>
+        </div>
+        <div class="demo">
+          <p>
+            In this demo you can control the position property for the yellow
+            box.
+          </p>
+        <div class="position-demo-box" id="position-demo-box-1"></div>
+        <div class="position-demo-box" id="position-demo-box-2"></div>
+        <div class="position-demo-box" id="position-demo-box-3"></div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+      var demo = document.querySelector("#position-demo-box-2");
+      document
+        .querySelector("#position-static")
+        .addEventListener("click", function () {
+          setActive("position-static");
+          demo.style.position = "static";
+        });
+      document
+        .querySelector("#position-relative")
+        .addEventListener("click", function () {
+          setActive("position-relative");
+          demo.style.position = "relative";
+          demo.style.top = "40px";
+          demo.style.left = "40px";
+        });
+      document
+        .querySelector("#position-absolute")
+        .addEventListener("click", function () {
+          setActive("position-absolute");
+          demo.style.position = "absolute";
+          demo.style.top = "40px";
+          demo.style.left = "40px";
+        });
+      document
+        .querySelector("#position-sticky")
+        .addEventListener("click", function () {
+          setActive("position-sticky");
+          demo.style.position = "sticky";
+          demo.style.top = "20px";
+        });
+      function setActive(id) {
+        document.querySelectorAll(".position").forEach((e) => {
+          e.classList.remove("active");
+        });
+        document.getElementById(id).classList.add("active");
+      }
+
+      // document.querySelector('.position').addEventListener('click',  ()=> {
+      //     var position = this;
+      //     console.log(position);
+      //     if(position === 'position-static') {
+      //         demo.style.position = 'static';
+      //     }else if(position === 'position-relative'){
+      //         demo.style.position = 'relative';
+      //         demo.style.top = '40px'
+      //         demo.style.left = '40px'
+      //     }else if(position === 'position-absolute'){
+      //         demo.style.position = 'absolute';
+      //         demo.style.top = '40px'
+      //         demo.style.left = '40px'
+      //     }else if(position === 'position-sticky'){
+      //         demo.style.position = 'sticky';
+      //         demo.style.top = '20px'
+      //     }
+      //     document.querySelectorAll('.position').forEach((e)=>{
+      //         e.classList.remove('active')
+      //     })
+      //     document.getElementById(position).classList.add('active');
+
+      // });
+    </script>
+  </body>
+</html>
