@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/bookmark-ribbon--v1.png">
+
+</head>
+<body>
+    <header>
+        <h1>Fashion</h1>    
+        <div class="right">
+            <nav>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-skull fa-rotate-90"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-moon-o" id="theme-darkmode" onclick="switchColorTheme()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+        </div>
+
+    </header>
+
+    <section class="section-1">
+        <div class="container">
+            <h1>Fashion</h1>
+            <p>Fashion is a free, open-source, responsive, and mobile-friendly. It's a simple, clean, and modern design that's easy to use.</p>
+            <div class="buttons">
+                <a href="" class="hero-btn">hero-btn</a>
+                <a href="" class="hero-btn">hero-btn</a>
+
+            </div>
+        </div>  
+    </section>
+
+    <section></section>
+
+
+    <footer>
+        <p>
+            Made With <i class="fa fa-heart"></i> By Groupe 4
+        </p>
+    </footer>
+    <script>
+        function showMenu() { document.querySelector("header nav").style.right = "0";}
+        function hideMenu() { document.querySelector("header nav").style.right = "-250px";}
+    </script>
+</body>
+</html>
