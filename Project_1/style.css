@@ -296,9 +296,10 @@ section.whoAreWe > .container .card .container {
 }
 
 footer {
-  background-color: #1b1b1b;
+  background-color: gray;
   padding: 1%;
   color: white; 
+  text-align: center;
 }
 footer a {
   color: white; 
