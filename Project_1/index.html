@@ -1,57 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="https://img.icons8.com/ios/50/000000/bookmark-ribbon--v1.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project One</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="https://img.icons8.com/ios/50/000000/bookmark-ribbon--v1.png">
 
 </head>
 <body>
-    <header>
-        <h1>Fashion</h1>    
-        <div class="right">
-            <nav>
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <i class="fa fa-skull fa-rotate-90"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <i class="fa fa-moon-o" id="theme-darkmode" onclick="switchColorTheme()"></i>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-    
-        </div>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#">ACCWebWorkShop</a>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    </header>
+	<section class="image-box">
+		<div class="background"></div>
+		<div class="overlay"></div>
+		<div class="content">
+			<div class="center">
+				<div class="title text-shadow">Group Four First Website</div>
+				<div class="sub_title text-shadow">With Pure HTML & CSS Only</div>
+				<div class="btns">
+					<button>Learn More</button>
+					<button>Subscribe</button>
+				</div>
+			</div> 
+		</div>
+	</section>
 
-    <section class="section-1">
-        <div class="container">
-            <h1>Fashion</h1>
-            <p>Fashion is a free, open-source, responsive, and mobile-friendly. It's a simple, clean, and modern design that's easy to use.</p>
-            <div class="buttons">
-                <a href="" class="hero-btn">hero-btn</a>
-                <a href="" class="hero-btn">hero-btn</a>
+	<section class="whoAreWe">
+			<div class="header">
+				<h2>Who We Are</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="card">
+						<img src="images/user_1.jpg" alt="Avatar">
+						<div class="container">
+							<h4><b>Ahmed Kira</b></h4>
+							<p>Computer Science Engineer</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="images/user_2.png" alt="Avatar">
+						<div class="container">
+							<h4><b>Dina Sayed</b></h4>
+							<p>Computer Science Engineer</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="images/user_3.png" alt="Avatar">
+						<div class="container">
+							<h4><b>Taif</b></h4>
+							<p>Architect & Engineer</p>
+						</div>
+					</div>        
+				</div>
+				<div class="row">
+					<div class="card">
+						<img src="images/img_avatar.png" alt="Avatar">
+						<div class="container">
+							<h4><b>John Doe</b></h4>
+							<p>Architect & Engineer</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="images/img_avatar.png" alt="Avatar">
+						<div class="container">
+							<h4><b>John Doe</b></h4>
+							<p>Architect & Engineer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
 
-            </div>
-        </div>  
-    </section>
+	<section class="section section-story">
+		<div class="header">
+			<h2 class="heading-line"> Our Story </h2>
+		</div>
+		<div class="story-section-layout">
+			<img src="images/story.png"/>
+			<div class="story-section-content">
+				<p>
+					 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque ipsum vitae incidunt culpa. Incidunt nam dolore nulla vel cumque, temporibus, ipsam non adipisci aperiam delectus mollitia ab voluptas labore?
+				</p>
+			</div>
+		</div>
+				</div>  
+		</div>
+	</section>
 
-    <section></section>
+	<section class="section section-services">
+		<div class="header">
+			<h2 class="heading-line">Our Services</h2>
+		</div>
+		<div class="container">
+			<div class="card">
+				<img src="./images/services-1.jpg" alt="">
+				<p>web development</p>
+			</div>
+			<div class="card">
+				<img src="./images/services-2.png" alt="">
+				<p>graphic design</p>
+			</div>
+			<div class="card">
+				<img src="./images/services-3.jpg" alt="">
+				<p>internet marketing</p>
+			</div>
+		</div>
+	</section>
 
-
-    <footer>
-        <p>
-            Made With <i class="fa fa-heart"></i> By Groupe 4
-        </p>
-    </footer>
-    <script>
-        function showMenu() { document.querySelector("header nav").style.right = "0";}
-        function hideMenu() { document.querySelector("header nav").style.right = "-250px";}
-    </script>
+	<footer>
+		<p>Powered by <a href="https://www.dnaaya.com/" target="_blank">Dnaaya</a></p>
+	</footer>
 </body>
 </html>
